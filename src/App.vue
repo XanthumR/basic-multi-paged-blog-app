@@ -1,12 +1,17 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Ana Sayfa</router-link>
   </nav>
   <router-view/>
 </template>
 
 <style>
+
+router-link {
+  text-decoration: none;
+  color: inherit;       
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,9 +27,13 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
+  background: rgb(20, 220, 87);
 }
 </style>
